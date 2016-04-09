@@ -23,7 +23,7 @@
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:inputType="textPersonName"
         android:hint="Email Address"
         android:ems="10"
@@ -38,7 +38,7 @@
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/password"
@@ -86,7 +86,8 @@
         android:layout_below="@+id/forgot"
         android:onClick="login"
         android:textStyle="bold|normal"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
 
     <ImageButton
         android:layout_width="40dp"
@@ -94,6 +95,25 @@
         android:id="@+id/imageButton"
         android:layout_below="@+id/login"
         android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
+        android:layout_margin="20dp"
         android:background="@drawable/social_btn_background"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageButton2"
+        android:background="@drawable/social_btn_background"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_toRightOf="@+id/login"
+        android:layout_toEndOf="@+id/login" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageButton3"
+        android:background="@drawable/social_btn_background"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_toLeftOf="@+id/login"
+        android:layout_toStartOf="@+id/login" />
+
 </RelativeLayout>
