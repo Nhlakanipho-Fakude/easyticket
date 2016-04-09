@@ -1,7 +1,13 @@
 package com.sbuhost.easyticket;
 
-/**
- * Created by Nhlakanipho Fakude on 4/9/2016.
- */
-public class Events {
+import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.support.v7.app.ActionBarActivity;
+
+public class Events extends ActionBarActivity{
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_events);
+    }
 }
