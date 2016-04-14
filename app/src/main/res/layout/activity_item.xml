@@ -183,20 +183,7 @@
             android:layout_marginStart="15dp"
             android:clickable="true" />
 
-        <ImageButton
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:id="@+id/imageButton4"
-            android:layout_alignTop="@+id/imageButton3"
-            android:layout_toRightOf="@+id/imageButton3"
-            android:layout_toEndOf="@+id/imageButton3"
-            android:layout_marginLeft="15dp"
-            android:src="@mipmap/images"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:background="@drawable/item_button"
-            android:layout_marginStart="15dp"
-            android:clickable="true" />
+
 
 </LinearLayout>
 <RelativeLayout

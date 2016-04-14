@@ -13,7 +13,7 @@ public class Login extends Activity {
         setContentView(R.layout.activity_login);
     }
     public void login(View v) {
-        startActivity(new Intent(Login.this,Item.class));
+        startActivity(new Intent(Login.this,Home.class));
         finish();
     }
 

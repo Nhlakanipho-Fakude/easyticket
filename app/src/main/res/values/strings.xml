@@ -8,4 +8,6 @@
     <string name="last">Last Dance</string>
     <string name="summary">Last event of the year featuring all artist</string>
     <string name="AboutEvent">About Event</string>
+    <string name="event_item_title">Event title</string>
+    <string name="event_item_date">21 MAY 2016</string>
 </resources>

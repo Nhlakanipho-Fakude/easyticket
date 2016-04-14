@@ -1,12 +1,12 @@
 package com.sbuhost.easyticket;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.View;
 import android.widget.Toast;
 
-/**
- * Created by Nhlakanipho Fakude on 4/9/2016.
- */
+
 public class Home extends ActionBarActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -14,5 +14,8 @@ public class Home extends ActionBarActivity{
 
 
         Toast.makeText(getApplicationContext(),"Welcome Home",Toast.LENGTH_LONG).show();
+    }
+    public void launchEvents(View v){
+        startActivity(new Intent(this, Events.class));
     }
 }

@@ -20,7 +20,7 @@
         <activity android:name=".Login"/>
         <activity
             android:name=".Dashboard"/>
-        <activity android:name=".Item"></activity>
+        <activity android:name=".Events"></activity>
     </application>
 
 </manifest>

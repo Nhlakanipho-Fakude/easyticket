@@ -4,8 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.sbuhost.easyticket.Home">
-
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/crowd"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/overlay_color"/>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="300dp"
@@ -16,15 +23,18 @@
         android:id="@+id/linearLayout">
 
         <ImageButton
+            android:src="@drawable/about"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:id="@+id/about_btn"
             android:background="@drawable/default_btn_background"
             android:layout_margin="15dp" />
         <ImageButton
+            android:src="@drawable/menu"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:id="@+id/events_btn"
+            android:onClick="launchEvents"
             android:background="@drawable/default_btn_background"
             android:layout_margin="15dp" />
     </LinearLayout>
@@ -37,12 +47,14 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/linearLayout2">
         <ImageButton
+            android:src="@drawable/settings"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:id="@+id/settings_btn"
             android:background="@drawable/default_btn_background"
             android:layout_margin="15dp" />
         <ImageButton
+            android:src="@drawable/social"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:id="@+id/social_btn"
@@ -51,9 +63,10 @@
     </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/login_button_skin"
+        android:text="Logout"
         android:id="@+id/button4"
         android:layout_below="@+id/linearLayout2"
         android:layout_centerHorizontal="true" />
