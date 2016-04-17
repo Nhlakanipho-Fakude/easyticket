@@ -22,7 +22,7 @@ public class ItemAdapter extends BaseAdapter {
     @Override
     public int getCount() {
         // TODO Auto-generated method stub
-        return result.length;
+        return 4;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class ItemAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = convertView;
         if(convertView==null)
-            view = inflater.inflate(R.layout.event_list_item, null);
+            view = inflater.inflate(R.layout.event_list_item, parent, false);
         return view;
     }
 
