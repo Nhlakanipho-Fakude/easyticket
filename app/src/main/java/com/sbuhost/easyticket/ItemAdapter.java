@@ -36,7 +36,10 @@ public class ItemAdapter extends BaseAdapter {
         // TODO Auto-generated method stub
         return position;
     }
-
+    public class Holder{
+        private TextView title, date, description;
+        private ImageView poster;
+    }
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = convertView;
         if(convertView==null)

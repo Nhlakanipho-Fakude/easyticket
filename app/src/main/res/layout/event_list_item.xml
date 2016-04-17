@@ -6,11 +6,14 @@
 
     <ImageView
         android:layout_width="150dp"
+        android:src="@mipmap/poster_background"
         android:layout_height="match_parent"
         android:id="@+id/poster"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="openMore"
+        android:scaleType="centerInside" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -39,6 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/events_clickable_item"
             android:onClick="showLocation">
 
             <ImageView
@@ -54,6 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/events_clickable_item"
             android:onClick="checkout">
             <ImageView
                 android:layout_width="match_parent"
@@ -67,6 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/events_clickable_item"
             android:onClick="share">
             <ImageView
                 android:layout_width="match_parent"
@@ -89,25 +95,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/event_item_date"
+            android:textSize="21dp"
             android:id="@+id/date"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:textColor="#ff8000" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MORE"
-            android:id="@+id/more"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:textColor="#3398ff"
-            android:layout_marginTop="5dp"
-            android:onClick="expand" />
 
         <TextView
             android:layout_width="wrap_content"

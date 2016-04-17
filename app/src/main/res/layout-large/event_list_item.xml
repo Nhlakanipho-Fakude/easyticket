@@ -5,12 +5,15 @@
     android:background="#fff">
 
     <ImageView
+        android:onClick="openMore"
+        android:src="@mipmap/poster_background"
         android:layout_width="150dp"
         android:layout_height="match_parent"
         android:id="@+id/poster"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:scaleType="centerInside" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,6 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/events_clickable_item"
             android:onClick="showLocation">
 
             <ImageView
@@ -49,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Medium Text"
+                android:text="Location"
                 android:layout_gravity="center_vertical"
                 android:textColor="#26c9ff" />
 
@@ -60,6 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/events_clickable_item"
             android:onClick="checkout">
             <ImageView
                 android:layout_width="40dp"
@@ -70,9 +75,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Medium Text"
+                android:text="Buy"
                 android:layout_gravity="center_vertical"
-                android:textColor="#26c9ff" />
+                android:textColor="#26c9ff"
+                android:layout_marginLeft="5dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -80,6 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/events_clickable_item"
             android:onClick="share">
             <ImageView
                 android:layout_width="40dp"
@@ -90,9 +97,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Medium Text"
+                android:text="Share"
                 android:layout_gravity="center_vertical"
-                android:textColor="#26c9ff" />
+                android:textColor="#26c9ff"
+                android:layout_marginLeft="5dp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -116,18 +124,6 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:textColor="#ff8000" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MORE"
-            android:id="@+id/more"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:textColor="#3398ff"
-            android:layout_marginTop="5dp"
-            android:onClick="expand" />
 
         <TextView
             android:layout_width="wrap_content"
