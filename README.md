@@ -1,4 +1,3 @@
-# README #
+# EasyTicket #
 
-## Moral of the story ##
-* This shit dumb
+## Uses gradle-2.8 ##
