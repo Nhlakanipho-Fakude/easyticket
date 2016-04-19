@@ -1,242 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/poster_image"
-    tools:context="com.sbuhost.easyticket.Item">
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true"
+    >
 
-
-    <HorizontalScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/horizontalScrollView2"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" >
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:id="@+id/inner_layout"
-            android:layout_height="match_parent">
-
-
-            <ImageView
-                android:id="@+id/imageView_linkedin_icon"
-                android:layout_width="100dp"
-                android:layout_height="120dp"
-                android:clickable="true"
-                android:contentDescription="Picture"
-                android:longClickable="true"
-                android:src="@mipmap/poster_background" />
-            <ImageView
-                android:id="@+id/imageView_linkedin_icon2"
-                android:layout_width="100dp"
-                android:layout_height="120dp"
-                android:clickable="true"
-                android:contentDescription="Picture"
-                android:longClickable="true"
-                android:src="@mipmap/poster_background" />
-            <ImageView
-                android:id="@+id/imageView_linkedin_icon3"
-                android:layout_width="100dp"
-                android:layout_height="120dp"
-                android:clickable="true"
-                android:contentDescription="Picture"
-                android:longClickable="true"
-                android:src="@mipmap/poster_background" />
-
-            <ImageView
-                android:id="@+id/imageView_linkedin_icon5"
-                android:layout_width="100dp"
-                android:layout_height="120dp"
-                android:clickable="true"
-                android:contentDescription="Picture"
-                android:longClickable="true"
-                android:src="@mipmap/poster_background" />
-            <ImageView
-                android:id="@+id/imageView_linkedin_icon6"
-                android:layout_width="100dp"
-                android:layout_height="120dp"
-                android:clickable="true"
-                android:contentDescription="Picture"
-                android:longClickable="true"
-                android:src="@mipmap/poster_background" />
-            <ImageView
-                android:id="@+id/imageView_linkedin_icon7"
-                android:layout_width="100dp"
-                android:layout_height="120dp"
-                android:clickable="true"
-                android:contentDescription="Picture"
-                android:longClickable="true"
-                android:src="@mipmap/poster_background" />
-        </LinearLayout>
-    </HorizontalScrollView>
-
-    <RelativeLayout
-        android:orientation="horizontal"
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/main.appbar"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_above="@+id/horizontalScrollView2"
-        android:layout_alignParentLeft="true"
-        android:background="@color/white"
-        android:layout_alignParentStart="true"
-        android:id="@+id/tiping">
+        android:layout_height="400dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/tip"
-            android:id="@+id/textView"
-            android:layout_centerVertical="true"
-            android:textColor="#000000"
-            android:layout_centerHorizontal="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_above="@+id/tiping"
-        android:layout_alignParentLeft="true"
-        android:background="@color/item_background"
-        android:layout_alignParentStart="true">
-
-        <LinearLayout
-            android:orientation="horizontal"
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/main.collapsing"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:weightSum="1"
-            android:id="@+id/linearLayout3">
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp">
 
-            <TextView
-                android:layout_width="114dp"
+            <ImageView
+                android:id="@+id/main.backdrop"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="@string/choose"
-                android:paddingTop="10sp"
-                android:paddingLeft="5sp"
-                android:id="@+id/textView2"
-                android:textColor="@color/white" />
+                android:scaleType="centerInside"
+                android:fitsSystemWindows="true"
+                android:src="@mipmap/poster_background"
+                app:layout_collapseMode="parallax"
+                />
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/main.toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <TextView
+                android:id="@+id/item_description"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="BANK CARD"
-                android:id="@+id/bank_card"
+                android:textSize="20sp"
+                android:lineSpacingExtra="8dp"
+                android:text="@string/lorem"
+                android:padding="@dimen/activity_horizontal_margin" />
 
-                android:layout_weight="0.13" />
-
-            <Button
-                style="?android:attr/buttonStyleSmall"
+            <com.sbuhost.easyticket.HorizontalListView
+                android:id="@+id/hListView"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ACCOUNT"
-                android:id="@+id/account"
-                android:layout_weight="0.13" />
-
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="DEPOSIT"
-                android:id="@+id/button2"
-                android:layout_weight="0.13" />
+                android:layout_height="120dp" />
         </LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:orientation="horizontal"
-    android:layout_above="@+id/linearLayout3"
-    android:id="@+id/linearLayout4">
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:onClick="buy"
+        android:src="@drawable/trolley"
+        app:layout_anchor="@id/main.appbar"
+        app:layout_anchorGravity="bottom|right|end" />
 
-
-        <ImageButton
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:id="@+id/imageButton2"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="15dp"
-            android:background="@drawable/item_button"
-            android:clickable="true"
-            android:contentDescription="picture" />
-
-        <ImageButton
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:id="@+id/imageButton3"
-            android:layout_alignBottom="@+id/imageButton2"
-            android:layout_toRightOf="@+id/imageButton2"
-            android:layout_toEndOf="@+id/imageButton2"
-            android:layout_marginLeft="15dp"
-            android:background="@drawable/item_button"
-            android:layout_marginStart="15dp"
-            android:clickable="true" />
-
-
-
-</LinearLayout>
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_above="@+id/linearLayout4">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/poster_name"
-            android:id="@+id/textView3"
-            android:textColor="@color/white"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/last"
-            android:id="@+id/textView4"
-            android:layout_below="@+id/textView3"
-            android:layout_alignParentLeft="true"
-            android:textColor="@color/white"
-            android:layout_alignParentStart="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/summary"
-            android:id="@+id/textView5"
-            android:layout_below="@+id/textView4"
-            android:layout_alignParentLeft="true"
-            android:paddingTop="20dp"
-            android:textColor="@color/white"
-            android:layout_alignParentStart="true"
-            android:layout_toLeftOf="@+id/button"
-            android:layout_toStartOf="@+id/button"
-            android:layout_alignParentBottom="true" />
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/AboutEvent"
-            android:id="@+id/button"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
-
-    </RelativeLayout>
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
