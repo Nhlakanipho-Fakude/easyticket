@@ -66,7 +66,7 @@
             <com.sbuhost.easyticket.HorizontalListView
                 android:id="@+id/hListView"
                 android:layout_width="wrap_content"
-                android:layout_height="120dp" />
+                android:layout_height="162dp" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
     <android.support.design.widget.FloatingActionButton
