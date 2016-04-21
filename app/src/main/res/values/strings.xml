@@ -12,5 +12,8 @@
     <string name="event_item_date">21 MAY 2016</string>
     <string name="lorem">
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus erat in magna tempor suscipit. Nam sodales lectus vel est iaculis suscipit. Proin nec arcu sit amet turpis vestibulum rutrum ut nec lectus. Suspendisse varius, odio ut feugiat feugiat, sapien nibh pellentesque urna, et consequat arcu est ac enim. Duis at dui nunc. Suspendisse potenti. Sed aliquam commodo auctor. Integer vehicula in nisl non dignissim. Ut urna nisl, ultricies at massa hendrerit, placerat aliquet ante.</string>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus erat in magna tempor suscipit. Nam sodales lectus vel est iaculis suscipit. Proin nec arcu sit amet turpis vestibulum rutrum ut nec lectus. Suspendisse varius, odio ut feugiat feugiat, sapien nibh pellentesque urna, et consequat arcu est ac enim.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
