@@ -1,5 +1,6 @@
 package com.sbuhost.easyticket;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.ActionBarActivity;
@@ -27,6 +28,6 @@ public class Events extends ActionBarActivity{
         Toast.makeText(this, "checking out", Toast.LENGTH_SHORT).show();
     }
     public void openMore(View v){
-        Toast.makeText(this, "opening", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, Item.class));
     }
 }
