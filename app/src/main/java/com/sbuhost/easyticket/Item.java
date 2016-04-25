@@ -31,5 +31,7 @@ public class Item extends AppCompatActivity {
     public void prev(View v){
         purchaser.prev();
     }
-    public void toReceivers(View v){}
+    public void toReceivers(View v){
+        purchaser.next();
+    }
 }

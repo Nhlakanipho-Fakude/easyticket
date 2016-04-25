@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:context="com.sbuhost.easyticket.ItemOptionsFragment"
     android:background="#ffffff"
-    android:onClick="toReceivers">
+    android:onClick="toPayment">
 
 
     <TextView
@@ -126,5 +126,17 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_margin="5dp" />
+        android:layout_margin="5dp"
+        android:onClick="toReceivers" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="R0"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/seekBar3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp" />
 </RelativeLayout>
